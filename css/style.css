@@ -87,6 +87,7 @@ li {
         font-size: 13px;
         padding:2px 0 ;
         position: relative;
+        margin:5px 15px ;
     }
 }
 
@@ -100,19 +101,20 @@ li {
 }
 
 .list.open-menu {
-    position: absolute;
+    position: relative;
     display: block;
     background-color: #333;
-    padding: 20px 20px ;
-    height: 112px;
-    width: 60%;
-    top: 54px;
-    right: 7px;
+    padding: 20px 20px;
+    width: 70%;
+    top: 51px;
+    right: -7px;
     border-radius: 4px;
     text-align: left;
     transition: .5s;
     margin: 0;
+    z-index: 1;
 }
+
 
 .list li .special {
     color: var(--main-color);
@@ -145,7 +147,7 @@ span.dev {
 }
 @media (max-width:576px) {
     .infos-container .content {
-        width:280px
+        width:280px ;
     }
 }
 
@@ -232,8 +234,11 @@ ul li .links::after {
     bottom:-3px ;
     transition: .5s;
 }
-
-
+@media (max-width:768px) {
+    ul li .links::after {
+        display: none;
+    }
+}
 
 ul li .links:hover:after {
     width: 100%;
@@ -275,6 +280,7 @@ ul li .links:hover:after {
     .second-title {
         font-size: 22px;
     }
+
     }
 
 
