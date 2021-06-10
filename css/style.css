@@ -128,6 +128,7 @@ span.dev {
 .infos-container {
     height: 375px;
     position: relative;
+    margin: 17px 0;
 }
 
 .container {
